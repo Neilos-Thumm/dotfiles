@@ -14,6 +14,8 @@ alias ll='eza --icons --group-directories-first'
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$HOME/Downloads/nvim-macos-arm64/bin:$PATH"
 export EDITOR="nvim"
+export EZA_CONFIG_DIR="$HOME/.config/eza"
+
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
