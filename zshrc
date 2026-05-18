@@ -1,5 +1,16 @@
-# App Wrapper
+# Alias
 
+# basic
+alias sz='source ~/.zshrc'
+
+#eza
+alias ls='eza -l --icons --group-directories-first --git --no-permissions --no-user --no-time --no-filesize'
+alias lt='eza --tree --level=2 --icons'
+alias la='eza -la --icons --group-directories-first --git'
+alias ll='eza --icons --group-directories-first'
+
+
+# App Wrapper
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$HOME/Downloads/nvim-macos-arm64/bin:$PATH"
 export EDITOR="nvim"
@@ -111,3 +122,4 @@ bindkey -M vicmd 'y' vi-yank-clip
 
 
 
+export PATH="$HOME/.local/bin:$PATH"
