@@ -82,10 +82,10 @@ precmd() {
 
   local line=${(l:$COLUMNS::─:)}
   local timestamp=$(date +%H:%M:%S)
-  print -P "%F{cyan}──── %F{white}%f %F{white}$timestamp ${elapsed}${status_icon}${vcs_info_msg_0_} %F{cyan}${line:0:$((COLUMNS - 40))}%f"
+  # print -P "%F{cyan}──── %F{white}%f %F{white}$timestamp ${elapsed}${status_icon}${vcs_info_msg_0_} %F{cyan}${line:0:$((COLUMNS - 40))}%f"
+  PROMPT="%F{cyan}──── %F{white}%f %F{white}$timestamp ${elapsed}${status_icon}${vcs_info_msg_0_} %F{cyan}${line:0:$((COLUMNS - 40))}%f"$'\n''%F{green}%6~%f %F{yellow}❯%f '
 }
 
-PROMPT='%F{green}%6~%f %F{yellow}❯%f '
 
 #Enable Vim within zsh
 bindkey -v
