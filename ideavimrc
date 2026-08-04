@@ -1,0 +1,79 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" Source your .vimrc
+source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+let mapleader = " "
+set notimeout
+nnoremap <leader> <Nop>
+
+nnoremap <leader>o :action RecentFiles<CR>
+nnoremap <leader><leader> :action SearchEverywhere<CR>
+
+sethandler <C-R> a:vim
+
+nnoremap H :action PreviousTab<CR>
+nnoremap L :action NextTab<CR>
+
+set ideamarks
+nnoremap m :action ToggleBookmarkWithMnemonic<CR>
+nnoremap <leader>O :action ShowBookmarks<CR>
+
+nnoremap `a `A
+nnoremap `b `B
+nnoremap `c `C
+nnoremap `d `D
+nnoremap `e `E
+nnoremap `f `F
+nnoremap `g `G
+nnoremap `h `H
+nnoremap `i `I
+nnoremap `j `J
+nnoremap `k `K
+nnoremap `l `L
+nnoremap `m `M
+nnoremap `n `N
+nnoremap `o `O
+nnoremap `p `P
+nnoremap `q `Q
+nnoremap `r `R
+nnoremap `s `S
+nnoremap `t `T
+nnoremap `u `U
+nnoremap `v `V
+nnoremap `w `W
+nnoremap `x `X
+nnoremap `y `Y
+nnoremap `z `Z
