@@ -2,6 +2,7 @@
 
 # Code
 alias p='python3'
+alias slides='node /Users/parunthummadetsak/Documents/\[1-5\]\ Study/\[2\]\ Project/pdf2vault/pdf2vault.mjs'
 
 # basic
 alias sz='source ~/.zshrc'
